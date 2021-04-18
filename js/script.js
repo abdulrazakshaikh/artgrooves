@@ -299,4 +299,44 @@ jQuery(function ($) {
       },
    });
 
+   /*Gallery*/
+   $('#gallery').cubeportfolio({
+      layoutMode: 'slider',
+      // sortByDimension: true,
+      showPagination: false,
+      auto: true,
+      autoTimeout : 1000,
+      // mediaQueries: [{
+      //    width: 1500,
+      //    cols: 6,
+      //   }, {
+      //    width: 1100,
+      //    cols: 5,
+      //   }, {
+      //    width: 800,
+      //    cols: 2,
+      //   }, {
+      //    width: 480,
+      //    cols: 1,
+      //    options: {
+      //       caption: '',
+      //       gapHorizontal: 15,
+      //       gapVertical: 15,
+      //    }
+      //   }],
+      animationType: 'fadeOutTop',
+      gapHorizontal: 5,
+      gapVertical: 5,
+      // gridAdjustment: 'responsive',
+      caption: 'fadeIn',
+      displayType: 'fadeIn',
+      displayTypeSpeed: 100,
+
+      // lightbox
+      lightboxDelegate: '.cbp-lightbox',
+      lightboxGallery: true,
+      lightboxTitleSrc: 'data-title',
+      lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+   });
+
 });
