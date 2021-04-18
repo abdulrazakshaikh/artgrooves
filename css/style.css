@@ -3692,8 +3692,17 @@ a.parallax2-btn:hover {
     .artist-about{
         padding: 2rem;
     }
+    .artist-gallery{
+        padding: 2rem;
+    }
     .artist-banner{
         height: 60vh;
+    }
+    .area-heading .area-title{
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -3951,9 +3960,9 @@ a.parallax2-btn:hover {
         margin-bottom: -3px;
     }
 
-    .cbp-l-caption-alignCenter .cbp-l-caption-body {
+    /*.cbp-l-caption-alignCenter .cbp-l-caption-body {
         display: none;
-    }
+    }*/
 
     h1.text-white.font-weight-500 {
         font-size: 30px;
@@ -4135,8 +4144,33 @@ a.parallax2-btn:hover {
         padding-left: 0px !important;
     }
 
-    .cbp-l-caption-alignCenter .cbp-l-caption-body, .cbp-l-caption-alignCenter .cbp-l-caption-head{
+/*    .cbp-l-caption-alignCenter .cbp-l-caption-body, .cbp-l-caption-alignCenter .cbp-l-caption-head{
         display: none;
+    }*/
+    .cbp-caption .cbp-caption-activeWrap .cbp-l-caption-alignCenter{
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 48px;
+    }
+    .cbp-caption .cbp-caption-activeWrap .cbp-l-caption-head{
+        width: 48px;
+        height: 48px;
+        border-radius: 0px;
+        border: 0px;
+        display: flex;
+        flex-basis: 48px;
+        background-color: #ffffff;
+    }
+    .cbp-caption .cbp-caption-activeWrap .cbp-l-caption-body{
+        padding: 0px 0px 0px 10px;
+        display: flex;
+        flex-basis: 70%;
+    }
+
+    .cbp-l-grid-mosaic-flat .cbp-l-caption-title{
+        text-align: left;
+        font-size: 12px;
+        line-height: normal;
     }
 
     .price li {
